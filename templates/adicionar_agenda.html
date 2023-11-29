@@ -1,0 +1,22 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+<h1>Adicionar tarefa</h1>
+
+<form action="{{ url_for('criar_agenda')}}" method="post">
+  <div class="mb-3">
+    <label for="data" class="form-label">Data</label>
+    <input  class="form-control" id="data" type="date" name="data" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="assunto" class="form-label">Assunto</label>
+    <input class="form-control" id="assunto" name="assunto" rows="3"></input>
+  </div>
+  <div class="mb-3">
+    <label for="descricao" class="form-label">Descrição</label>
+    <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+<div id="geral">
+
+<img src="{{ url_for('static', filename= 'imagem1.png') }}" id="img_principal">
+
+</div>
+<div id="Python">
+<h3>Definição de Python:</h3>
+<p>O Python é uma linguagem de programação, como você já deve ter ouvido falar de várias outras que existem.
+
+Só que foi desenvolvido para ser simples, fácil de aprender e muito versátil, ou seja, você vai poder utilizar essa linguagem para diversas tarefas.
+
+Pode construir aplicativos, criar sites, desenvolver programas, criar jogos, fazer análise de dados, inteligência artificial, entre outras atividades.
+
+Ao aprender o que é Python, você tem muitas opções. Como é uma linguagem mais fácil de aprender, é excelente para você começar no mundo da programação.
+
+Claro que a programação Python não será a única que vai aprender, mas já é uma excelente linguagem para iniciar. O sistema Python permite o desenvolvimento e a criação de diversos programas.
+
+Além disso, é uma das linguagens de programação mais utilizadas no mundo e no Brasil. Ela está em constante crescimento e por consequência acaba sendo mais valorizada.
+
+Quando você aprende a linguagem Python, o que é, percebe que ela pode ser utilizada em diversas áreas, o que pode diferenciar de outras linguagens de programação.
+
+Outro ponto muito importante é que o mesmo código funciona em Windows, Linux e macOS, sem que sejam necessários ajustes nos códigos. Mas cuidado! As bibliotecas podem sofrer alguma alteração por conta do sistema operacional.
+
+Entendeu o que é e para que serve Python? Percebeu o que pode ser feito em Python? Agora é hora de saber as características do Python.</p>
+</div>
+
+<h3>Definição de Flask:</h3>
+<p>O Flask é um microframework para desenvolvimento web desenvolvido em Python que tem ganhado cada vez mais popularidade entre os desenvolvedores. Ele é projetado para ser fácil de usar, rápido e flexível, e oferece uma grande variedade de recursos para construir aplicações web completas.</p>
+    {% for termo in glossario %}
+        <h3>{{ termo[0] }}</h3>
+        <p>Mussum Ipsum, cacilds vidis litro abertis.  Manduma pindureta quium dia nois paga. Si num tem leite então bota uma pinga aí cumpadi! Paisis, filhis, espiritis santis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+
+            Atirei o pau no gatis, per gatis num morreus. Pra lá, depois divoltis porris, paradis. A ordem dos tratores não altera o pão duris. Si num tem leite então bota uma pinga aí cumpadi!</p>
+    {% endfor %}
+{% endblock %}
